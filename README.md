@@ -5,4 +5,4 @@ I'll store here all the projects I make outside of Codecademy, like Front-end Me
 
 ### Links to the projects
 
-[Testimonials Grid Section using CSS] (./Testimonials/testimonials.html)
+[Testimonials Grid Section using CSS](/Testimonials/testimonials.html)
