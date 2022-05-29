@@ -27,13 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-[./screenshot.png] 
-My solution on Desktop
+[My solution on Desktop](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL:](https://www.frontendmentor.io/solutions/testimonials-grid-section-using-css-hPE4u4cszc)
+- [Live Site URL:](https://chabulsqu.github.io/personal_projects/Testimonials/testimonials.html)
 
 ## My process
 
