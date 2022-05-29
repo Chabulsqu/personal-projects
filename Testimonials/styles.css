@@ -1,0 +1,132 @@
+
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 12px;
+    font-family: 'Barlow Semi Condensed', Arial, sans-serif;
+}
+body {
+    background-color: hsl(210, 46%, 95%);;
+}
+main {
+    display: grid;
+    gap: 0;
+    grid-template-columns: 100%;
+    grid-template-rows: 32rem 19.5rem 18.5rem 30rem 34rem;
+    color: hsl(0, 0%, 81%);
+}
+img {
+    display: inline-block;
+    width: 10%;
+    height: auto;
+    border-radius: 50%;
+}
+h3, h4 {
+    margin-bottom: -.25rem;
+    transform:translate(15%, -200%);
+}
+h2 {
+    margin: -.9rem auto 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+h3 {
+    font-size: 1rem
+}
+h4 {
+    opacity: 50%;
+    font-size: 0.91666666666rem;
+}
+p {
+    opacity: 70%;
+    font-size: 1.08333333333rem;
+}
+
+.attribution { 
+    position: relative;
+    top: 2.5rem;
+    font-size: 11px; 
+    text-align: center; 
+    margin-bottom: .5rem;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* Box Styles */
+.box { 
+    border-radius: 3%;
+    margin: 1rem 7.5%;
+    padding: 1.89rem;
+    filter: drop-shadow(.025rem .125rem grey);
+}
+.violet, .grey, .white, .black {
+    width: 85%;
+}
+.violet {
+    background-color: hsl(263, 55%, 52%);
+    background-image: url('./images/bg-pattern-quotation.svg');
+    background-size: 30%;
+    background-position: 88% 0%;
+    background-repeat: no-repeat;
+}
+.grey {
+    background-color: hsl(217, 19%, 35%);
+}
+.white {
+    background-color: hsl(0, 0%, 100%);
+}
+.white h2, .white h3, .white h4, .white p {
+    color: hsl(219, 29%, 14%);
+}
+.black {
+    background-color: hsl(219, 29%, 14%);
+} 
+
+@media only screen and (min-width: 1440px) {
+    html {
+        font-size: 14px;
+        height: 100%;
+        overflow-y: hidden;
+    }
+    main {
+        transform: translate(5%, 7.5%);
+        gap: 5%;
+        width: 85%;
+        grid-template-columns: 22.5% 22.5% 22.5% 22.5%;
+        grid-template-rows: 25rem 25rem;
+        grid-template-areas: 'box-violet box-violet box-grey white-l'
+                              'white-s box-black box-black white-l';
+    }
+    .attribution { 
+        position: relative;
+        top: -50rem;
+    }
+    .box {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .violet {
+        background-size: 22.5%;
+        grid-area: box-violet;
+    }
+    .grey {
+        grid-area: box-grey;
+    }
+    .white:first-child{
+        grid-area: white-s;
+    }
+    .black {
+        grid-area: box-black;
+    }
+    .white:last-child { 
+        grid-area: white-l;
+    }
+ }
+
