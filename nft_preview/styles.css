@@ -1,0 +1,180 @@
+
+/* Resets and Variable declarations */
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Outfit', Arial, sans-serif;
+    --main-accent-color: hsl(178, 100%, 50%);
+    --main-text-color: hsl(215, 51%, 70%);
+    --heading-text-color: hsl(0, 100%, 100%);
+    --main-background-color: hsl(217, 54%, 11%);
+    --card-background-color: hsl(216, 50%, 16%);
+    --line-border-color: hsl(215, 32%, 27%);
+    --device-height: 800px;
+}
+
+/* Page Styles */
+
+strong, hr, h2, div, .icon, .profile, p:nth-last-of-type(1) {
+    position: relative;
+}
+
+body {
+    height: 100%;
+    background-color: var(--main-background-color);
+}
+main {
+    width: 88%;
+    height: 85%;
+    padding: 5%;
+    border-radius: 4%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap; 
+    background-color: var(--card-background-color);
+}
+strong {
+    left: 8%;
+    top: -85%;
+    display: inline;
+    color: var(--main-accent-color);
+    font-weight: 600;
+}
+span {
+    font-weight: 600;
+    transform: translate(50%, -50000%);
+}
+h1 {
+    color: var(--heading-text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2.5;
+}
+h2 {
+    left: 18%;
+    top: -193%;
+}
+h2, p {
+    font-size: 1rem;
+    color: var(--main-text-color);
+    line-height: 1.75;
+    font-weight: 300;
+}
+p:nth-last-of-type(1) {
+    left: 72%;
+    top: -144.25%;
+}
+img {
+    margin-left: 1.25%;
+    width: 98%;
+    height: auto;
+    border-radius: 3%;
+}
+hr {
+    height: 1px;
+    width: 97.5%;
+    border: 1px solid var(--line-border-color);
+    left: 1%;
+    top: -142%;
+}
+div {
+    background-color: var(--main-accent-color);
+    z-index: 3;
+    width: 98%;
+    height: auto;
+    border-radius: 3%;
+    opacity: 0;
+    top: -288%;
+    left: 1%;
+}
+
+.icon, .profile {
+    display: inline-block;
+    border-radius: 0;
+}
+.icon {
+    left: -47%;
+    top: -38.5%;
+    transform: scale(.05);
+}
+.icon:nth-last-of-type(2) {
+    left: 16%;
+    top: -114.5%;
+    transform: scale(.075);
+}
+.profile {
+    left: -42%;
+    top: -163%;
+    transform: scale(.14);
+    border: 2px solid var(--heading-text-color);
+    border-radius: 50%;
+}
+
+h1:hover, span:hover, div:hover, h1:focus, span:focus, div:focus {
+    cursor: pointer;
+    color: var(--main-accent-color);
+    transition: color .75s .25s;
+}
+div:hover {
+    opacity: .5;
+    transition: opacity .5s ease-out; 
+}
+div img {
+    z-index: 3;
+    transform: scale(.5);
+}
+/* Media Queries */
+
+@media (min-width: 1440px) {
+    :root {
+        font-size: 18px;
+    }
+    main {
+        width: 27%;
+        height: 70%;
+        padding: 1.5%;
+    } 
+    .icon {
+        top: -42%;
+        left: -47%;
+    }
+    .icon:nth-last-of-type(2) {
+        top: -121.5%;
+        left: 18%;
+    }
+    strong {
+        top: -91%;
+    }
+    p:nth-last-of-type(1) {
+        top: -153%;
+        left: 74%;
+    }
+    hr {
+        top: -149%;
+    }
+    .profile {
+        top: -172%;
+        transform: scale(.12);
+    }
+    h2 {
+        top: -203.5%;
+    }
+    div {
+        width: 338.695px;
+        height: 338.695px;
+        top: -305%;
+    }
+ }
