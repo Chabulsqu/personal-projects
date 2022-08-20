@@ -29,6 +29,11 @@ strong, hr, h2, div, .icon, .profile, p:nth-last-of-type(1) {
     position: relative;
 }
 
+[src="./images/image-equilibrium.jpg"] {
+    width: 77.5vw;
+    height: 42vh;
+}
+
 body {
     height: 100%;
     background-color: var(--main-background-color);
@@ -45,10 +50,11 @@ main {
     display: flex;
     flex-wrap: wrap; 
     background-color: var(--card-background-color);
+    filter: drop-shadow(1px 1px var(--card-background-color));
 }
 strong {
-    left: 8%;
-    top: -85%;
+    left: 10%;
+    top: -80.5%;
     display: inline;
     color: var(--main-accent-color);
     font-weight: 600;
@@ -64,18 +70,14 @@ h1 {
     line-height: 2.5;
 }
 h2 {
-    left: 18%;
-    top: -193%;
+    left: 20%;
+    top: -178%;
 }
 h2, p {
     font-size: 1rem;
     color: var(--main-text-color);
     line-height: 1.75;
     font-weight: 300;
-}
-p:nth-last-of-type(1) {
-    left: 72%;
-    top: -144.25%;
 }
 img {
     margin-left: 1.25%;
@@ -88,17 +90,21 @@ hr {
     width: 97.5%;
     border: 1px solid var(--line-border-color);
     left: 1%;
-    top: -142%;
+    top: -132.5%;
 }
 div {
     background-color: var(--main-accent-color);
     z-index: 3;
-    width: 98%;
-    height: auto;
+    width: 77.5vw;
+    height: 42vh;
     border-radius: 3%;
     opacity: 0;
-    top: -288%;
-    left: 1%;
+    top: -276%;
+    left: 0.5%;
+}
+p:nth-last-of-type(1) {
+    left: 73%;
+    top: -136.5%;
 }
 
 .icon, .profile {
@@ -106,18 +112,18 @@ div {
     border-radius: 0;
 }
 .icon {
-    left: -47%;
-    top: -38.5%;
+    top: -36%;
+    left: -45%;
     transform: scale(.05);
 }
-.icon:nth-last-of-type(2) {
+[src="./images/icon-clock.svg"] {
     left: 16%;
-    top: -114.5%;
-    transform: scale(.075);
-}
+    top: -108%;
+    transform: scale(0.08);
+}   
 .profile {
     left: -42%;
-    top: -163%;
+    top: -150%;
     transform: scale(.14);
     border: 2px solid var(--heading-text-color);
     border-radius: 50%;
@@ -140,41 +146,45 @@ div img {
 
 @media (min-width: 1440px) {
     :root {
-        font-size: 18px;
+        font-size: 16px;
+    }
+    [src="./images/image-equilibrium.jpg"] {
+        width: 40vw;
+        height: 34vh;
     }
     main {
-        width: 27%;
-        height: 70%;
+        width: 20%;
+        height: 72.5%;
         padding: 1.5%;
     } 
     .icon {
-        top: -42%;
+        top: -36%;
         left: -47%;
     }
     .icon:nth-last-of-type(2) {
-        top: -121.5%;
+        top: -110%;
         left: 18%;
     }
     strong {
-        top: -91%;
+        top: -81%;
     }
     p:nth-last-of-type(1) {
-        top: -153%;
+        top: -139%;
         left: 74%;
     }
     hr {
-        top: -149%;
+        top: -134%;
     }
     .profile {
-        top: -172%;
-        transform: scale(.12);
+        top: -152.5%;
+        transform: scale(.14);
     }
     h2 {
-        top: -203.5%;
+        top: -181.5%;
     }
     div {
-        width: 338.695px;
-        height: 338.695px;
-        top: -305%;
+        width: 40vw;
+        height: 34vh;
+        top: -282.5%;
     }
  }
